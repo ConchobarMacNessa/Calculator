@@ -1,48 +1,45 @@
 <html>
-	<head>
-		<title>Hello World</title>
-	<link rel="stylesheet"
-			type="text/css"
-			href="bootstrap.css"
-			/>
-	<link rel="stylesheet"
-			type="text/css"
-			href="styles.css"
-			/>
-	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	</head>
-	<body>
-
-		<a href="Index.html">Home page</a>
-		&nbsp;
-		<a href="Aboutme.html">About me</a>
-		&nbsp;
-		<a href="Contact.html">
-			Contact me
-		</a>
-
-		<hr></hr>
-	<div class="container">
-		<h1 id="title" onclick="sayGoodbye();">Hello</h1>
-
-<script type="text/javascript">
-	function sayGoodbye(){
-		$("#title").html("Goodbye");
-		$("#title").click(function () {
-			$("#title").html("Hello");
-			$("#title").off("click");
-		});
-	};
-</script>
-
-		<div class="row">
-			<div class="col-md-3 thin_border">
-				Some content here for panel 1
-			</div>
-			<div class="col-md-9 thin_border">
-				Some content here for panel 2
-			</div>
-		</div>
-	</div>		
-	</body>
+  <head>
+    <link rel="stylesheet"
+        type="text/css"
+        href="bootstrap.css"
+        />
+    <link rel="stylesheet"
+        type="text/css"
+        href="styles.css"
+        />
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  </head>
+  <body>
+    <div class="text-center">
+    </div>
+    <div class="calcOutput">
+      <span id="steps">0</span>
+      <hr/>
+    </div>
+    <div class="text-center" id="calculator">
+      <a class="btn btn-default" id="deleteAll">AC</a>
+      <a class="btn btn-default" id="backOne">CE</a>
+      <a class="btn btn-default" id="/">/</a>
+      <a class="btn btn-default" id="*">*</a>
+        <br/>
+      <a class="btn btn-default" id="7">7</a>
+      <a class="btn btn-default" id="8">8</a>
+      <a class="btn btn-default" id="9">9</a>
+      <a class="btn btn-default" id="-">-</a>
+        <br/>
+      <a class="btn btn-default" id="4">4</a>
+      <a class="btn btn-default" id="5">5</a>
+      <a class="btn btn-default" id="6">6</a>
+      <a class="btn btn-default" id="+">+</a>
+          <br/>
+      <a class="btn btn-default" id="1">1</a>
+      <a class="btn btn-default" id="2">2</a>
+      <a class="btn btn-default" id="3">3</a>
+      <a class="btn btn-default" id=".">.</a>
+          <br/>
+      <a class = "btn btn-default bigButton" id="0">0</a>
+      <a class = "btn btn-default bigButton" id="total">=</a>
+    </div>
+  </body>
 </html>
