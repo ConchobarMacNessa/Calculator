@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Hello World</title>
+	<link rel="stylesheet"
+			type="text/css"
+			href="bootstrap.css"
+			/>
+	<link rel="stylesheet"
+			type="text/css"
+			href="styles.css"
+			/>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	</head>
+	<body>
+
+		<a href="Index.html">Home page</a>
+		&nbsp;
+		<a href="Aboutme.html">About me</a>
+		&nbsp;
+		<a href="Contact.html">
+			Contact me
+		</a>
+
+		<hr></hr>
+	<div class="container">
+		<h1 id="title" onclick="sayGoodbye();">Hello</h1>
+
+<script type="text/javascript">
+	function sayGoodbye(){
+		$("#title").html("Goodbye");
+		$("#title").click(function () {
+			$("#title").html("Hello");
+			$("#title").off("click");
+		});
+	};
+</script>
+
+		<div class="row">
+			<div class="col-md-3 thin_border">
+				Some content here for panel 1
+			</div>
+			<div class="col-md-9 thin_border">
+				Some content here for panel 2
+			</div>
+		</div>
+	</div>		
+	</body>
+</html>
